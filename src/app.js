@@ -15,7 +15,7 @@ app.set("view engine","hbs");
 app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
 app.use("/static", express.static('./static/'));
-
+//load home page
 app.get('',(req,res)=>{
     res.render('index',{
         title:"weather app",
