@@ -2,6 +2,7 @@
 const path= require("path");
 const express=require("express");
 const app=express();
+const port=process.env.PORT || 3000;//when we deploy the port value is automatically assigned by heroku
 const hbs=require("hbs");
 
 const request = require("postman-request");
@@ -79,6 +80,6 @@ app.get("*",(req,res)=>{
 });
 
 
-app.listen(3000,()=>{
-    console.log("server is up");
+app.listen(port,()=>{
+    console.log("server is up on port"+port);
 });

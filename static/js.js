@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit',(e)=>{
     messageOne.textContent="";
     messageTwo.textContent="Loading...";
     //fetch below link and get forcast
-    fetch("http://localhost:3000/weather?address="+location).then((response)=>{
+    fetch("/weather?address="+location).then((response)=>{
     response.json().then((data)=>{
         //if we get error <p></p>in index.hbs will print it
         if(data.error){
