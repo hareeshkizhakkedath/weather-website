@@ -65,7 +65,8 @@ app.get("/weather",(req,res)=>{
                 forcast_temprature:forecastData.temperature,
                 weather_description:forecastData.weather_descriptions,
                 location,
-                address:req.query.address
+                address:req.query.address,
+                weather_icon:forecastData.weather_icons
             });
         });
     });
