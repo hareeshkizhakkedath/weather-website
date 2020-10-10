@@ -36,7 +36,7 @@ app.get('/help',(req,res)=>{
     res.render('help',{
         about:"entho",
         title:"help",
-        name:"hari"
+        name:"Hareesh"
     });
 });
 //get method for weather route
